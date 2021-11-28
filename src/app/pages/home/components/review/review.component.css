@@ -1,0 +1,24 @@
+.reviews {
+  background: #f7f7f7;
+  padding: 100px 0;
+}
+.reviews .review {
+  text-align: center;
+}
+.reviews .review .names {
+  font-size: 24px;
+  font-family: Cormorant, serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.reviews .review .name {
+  font-size: 14px;
+}
+.reviews .review .quotes {
+  content: url("/assets/img/quotes.svg");
+  margin: 39px auto;
+}
+.reviews .review .text {
+  font-size: 18px;
+}
+/*# sourceMappingURL=review.component.css.map */

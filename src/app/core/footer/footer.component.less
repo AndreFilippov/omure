@@ -1,0 +1,35 @@
+footer{
+  margin-top: 100px;
+  background-color: #F7F7F7;
+  padding: 100px 0;
+  text-align: center;
+  .contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+      margin: 15px;
+      width: 44px;
+      height: 44px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      &.instagram{
+        background-image: url("/assets/img/instagram.svg");
+      }
+      &.pinterest{
+        background-image: url("/assets/img/pinterest.svg");
+      }
+      &.email{
+        background-image: url("/assets/img/email.svg");
+      }
+    }
+  }
+  .info{
+    font-size: 18px;
+    a{
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}

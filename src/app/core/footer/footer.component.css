@@ -1,0 +1,36 @@
+footer {
+  margin-top: 100px;
+  background-color: #F7F7F7;
+  padding: 100px 0;
+  text-align: center;
+}
+footer .contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .contacts a {
+  margin: 15px;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+footer .contacts a.instagram {
+  background-image: url("/assets/img/instagram.svg");
+}
+footer .contacts a.pinterest {
+  background-image: url("/assets/img/pinterest.svg");
+}
+footer .contacts a.email {
+  background-image: url("/assets/img/email.svg");
+}
+footer .info {
+  font-size: 18px;
+}
+footer .info a {
+  text-decoration: none;
+  color: #000;
+}
+/*# sourceMappingURL=footer.component.css.map */

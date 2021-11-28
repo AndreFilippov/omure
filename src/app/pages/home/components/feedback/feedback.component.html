@@ -1,0 +1,47 @@
+<div class="feedback-wrapper">
+    <div class="content">
+    <div class="title">Остались вопросы? Напишите нам прямо сейчас!</div>
+    <form action="" id="feedback" [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+      <div class="first-block">
+      <label>
+        <p class="field-placeholder">Ваше имя</p>
+        <input type="text" formControlName="name">
+      </label>
+      <label>
+        <p class="field-placeholder">Выберите вид связи</p>
+      </label>
+      <div class="type-feedback-group">
+        <div class="type">
+          <input type="radio" name="type" id="telegram" (change)="onChangeType()" formControlName="type" value="telegram" [ngModel]="feedbackForm.value.type">
+          <label for="telegram">telegram</label>
+        </div>
+        <div class="type">
+          <input type="radio" name="type" id="email" (change)="onChangeType()" formControlName="type" value="email" [ngModel]="feedbackForm.value.type">
+          <label for="email">e-mail</label>
+        </div>
+        <div class="type">
+          <input type="radio" name="type" id="whatsapp" (change)="onChangeType()" formControlName="type" value="whatsapp" [ngModel]="feedbackForm.value.type">
+          <label for="whatsapp">whatsapp</label>
+        </div>
+        <div class="type">
+          <input type="radio" name="type" id="instagram" (change)="onChangeType()" formControlName="type" value="instagram" [ngModel]="feedbackForm.value.type">
+          <label for="instagram">Instagram</label>
+        </div>
+      </div>
+      </div>
+      <div class="second-block">
+      <label>
+        <p class="field-placeholder">{{ secondNamePlaceHolder }}</p>
+        <input type="text" formControlName="secondName" *ngIf="secondNameType === 'phone'" prefix="+7 " mask="(000) 000-00-00" >
+        <input type="text" formControlName="secondName" *ngIf="secondNameType !== 'phone'">
+      </label>
+      <label>
+        <p class="field-placeholder">Вопрос</p>
+        <textarea formControlName="question"></textarea>
+      </label>
+        <button *ngIf="!sender" type="submit" class="button-main to-catalog">Отправить</button>
+        <span *ngIf="sender" class="send-success">Отправлено</span>
+      </div>
+    </form>
+  </div>
+</div>

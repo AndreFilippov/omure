@@ -1,1 +1,118 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url('/assets/fonts/FuturaPT-Book.eot');
+  src: local('Futura PT Book'), local('FuturaPT-Book'),
+  url('/assets/fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/FuturaPT-Book.woff') format('woff'),
+  url('/assets/fonts/FuturaPT-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/assets/fonts/Cormorant-SemiBold.eot');
+  src: local('Cormorant SemiBold'), local('Cormorant-SemiBold'),
+  url('/assets/fonts/Cormorant-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Cormorant-SemiBold.woff') format('woff'),
+  url('/assets/fonts/Cormorant-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+}
+
+body{
+  background: #e5e5e5;
+  font-family: 'Futura PT Book', serif;
+  color: #000;
+}
+
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.content{
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+
+.main-arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: calc(50% - 25px);
+  z-index: 1;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  cursor: pointer;
+  &.btn-prev{
+    svg{
+      position: absolute;
+      left: 18px;
+    }
+    left: 25px !important;
+  }
+  &.btn-next{
+    right: 25px !important;
+    svg{
+      position: absolute;
+      right: 18px;
+    }
+  }
+  &:hover{
+    background-color: #000;
+    path{
+      stroke: #fff;
+    }
+  }
+}
+
+.main-dots{
+  position: absolute;
+  bottom: 30px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  li{
+    list-style-type: none;
+    .dot{
+      cursor: pointer;
+      margin: 5px;
+    }
+    &.slick-active{
+      svg{
+        fill: #000;
+      }
+    }
+  }
+}
+
+.button-main{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 15px 20px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 100px;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  .active, &:hover{
+    background: #000;
+    color: #fff;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="content">
+  <div class="faqs-wrapper">
+    <div class="title">FAQ</div>
+    <div class="faqs">
+      <div *ngFor="let faq of faqs" class="faq" [class.open] = "faq.open">
+        <div class="question" (click)="openAnswer($event, faq)">{{ faq.question }}</div>
+        <div class="answer">{{ faq.answer }}</div>
+      </div>
+    </div>
+  </div>
+</div>

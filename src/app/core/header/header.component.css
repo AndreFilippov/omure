@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 100px;
+  background-color: #fff;
+  height: 100px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav .header-menu {
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+  align-items: stretch;
+}
+header nav .header-menu li {
+  list-style-type: none;
+}
+header nav .header-menu li .menu-item {
+  padding: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+header nav .header-menu li .menu-item.active,
+header nav .header-menu li .menu-item:hover {
+  color: #848484;
+}
+/*# sourceMappingURL=header.component.css.map */
