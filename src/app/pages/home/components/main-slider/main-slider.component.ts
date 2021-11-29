@@ -13,9 +13,9 @@ export class MainSliderComponent implements OnInit {
   }
 
   slides = [
-    { img: "/assets/img/sliders/slider_1.jpg" },
-    { img: "/assets/img/sliders/slider_1.jpg" },
-    { img: "/assets/img/sliders/slider_1.jpg" }
+    { img: "./assets/img/sliders/slider_1.jpg" },
+    { img: "./assets/img/sliders/slider_1.jpg" },
+    { img: "./assets/img/sliders/slider_1.jpg" }
   ];
 
   slideConfig = {

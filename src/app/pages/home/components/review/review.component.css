@@ -15,7 +15,7 @@
   font-size: 14px;
 }
 .reviews .review .quotes {
-  content: url("/assets/img/quotes.svg");
+  content: url("../../../../../assets/img/quotes.svg");
   margin: 39px auto;
 }
 .reviews .review .text {
